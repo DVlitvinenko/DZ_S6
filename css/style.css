@@ -1,0 +1,289 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #5D5D5D;
+}
+
+.center {
+  max-width: 1140px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.header {
+  background: #222222;
+}
+
+.header__wrap {
+  display: flex;
+  justify-content: space-between;
+  padding: 18px 0 19px 0;
+}
+
+.header__search {
+  display: flex;
+  gap: 41px;
+}
+
+.logo {}
+
+.search {}
+
+.navigation {}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  gap: 33px;
+}
+
+.nav__item {}
+
+.header__gumb__btn {
+  background: #222222;
+  border: none;
+}
+
+.header__gumb__img {}
+
+.nav__link {}
+
+.nav__img {}
+
+.content {}
+
+.promo__wrap {
+  background: #F1E4E6;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+}
+
+.top__wrap {}
+
+.top__img {
+  width: 572px;
+  height: 767px;
+}
+
+.top__red {
+  margin: 0 16px 0 64px;
+}
+
+.top__title {
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 58px;
+  color: #222222;
+  text-transform: uppercase;
+  max-width: 377px;
+  width: 100%;
+  line-height: 38px;
+}
+
+.top__txt {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  color: #222222;
+}
+
+.top__txt__red {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  color: #F16D7F;
+}
+
+.category {
+  margin: 40px 0 96px 0;
+}
+
+.category__list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(30%, 360px));
+  gap: 30px;
+}
+
+.category__item {
+  max-width: 360px;
+  min-height: 260px;
+  width: 100%;
+  background-image: url(../img/category_img1.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(33, 22, 22, 0.7);
+  background-blend-mode: darken;
+  text-align: center;
+}
+
+.category__link {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.category__list li:nth-child(2) {
+  background-image: url(../img/category_img2.png);
+}
+
+.category__list li:nth-child(3) {
+  background-image: url(../img/category_img3.png);
+}
+
+.category__list li:nth-child(4) {
+  background-image: url(../img/category_img4.png);
+  max-width: 1140px;
+  min-height: 180px;
+  grid-column: span 3;
+}
+
+.category__txt {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+
+.category__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #F16D7F;
+}
+
+.products {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  margin-bottom: 48px;
+}
+
+.prodacts__title {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  color: #222222;
+  text-align: center;
+}
+
+.prodacts__txt {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #9F9F9F;
+  text-align: center;
+  margin: 6px 0 48px 0;
+}
+
+.prodacts__list {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, minmax(30%, 360px));
+
+}
+
+.prodact__add__btn {
+  border: none;
+  display: none;
+}
+
+.prodacts__item {
+  background: #F8F8F8;
+}
+
+
+.wrap__img {
+  margin-bottom: 24px;
+}
+
+/* .wrap__img:hover .prodact__add__btn {
+  background-image: url(../img/prodact__hover.svg);
+  width: 139px;
+  height: 44px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+} */
+
+.prodact__txt__wrap {
+  margin: 0 29px 20px 16px;
+}
+
+.prodacts__img__item {}
+
+.prodact__subtitle {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.prodact__item__txt {
+  margin: 12px 0 18px 0;
+}
+
+.prodact__item__prise {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #F16D7F;
+}
+
+.prodacts__item:hover {
+  filter: drop-shadow(0px 2px 21px rgba(0, 0, 0, 0.231));
+}
+
+.prodacts__img__item:hover {
+  background: rgba(58, 56, 56, 0.86);
+  top: 0;
+  left: 0;
+  width: 360px;
+  height: 420px;
+}
+
+.footer {
+  max-width: 212px;
+  min-height: 48px;
+  width: 100%;
+  margin: 0 auto 60px auto;
+}
+
+.footer__browse__btn {
+  border: solid 1px #FF6A6A;
+  background: none;
+  padding: 15px 39px 14px 39px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #F26376;
+  cursor: pointer;
+}
+
+.footer__browse__btn:hover {
+  border: solid 1px #fff;
+  background: #FF6A6A;
+  color: #fff;
+}
