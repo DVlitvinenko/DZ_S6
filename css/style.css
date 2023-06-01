@@ -429,29 +429,48 @@ body {
   grid-template-columns: repeat(3, minmax(30%, 360px));
 }
 
-.prodact__add__btn {
-  border: none;
-  display: none;
-}
-
 .prodacts__item {
   background: #F8F8F8;
+  position: relative;
+}
+
+.prodact__add__btn {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  border: none;
+  position: absolute;
+  width: 139px;
+  height: 44px;
+  top: 188px;
+  left: 111px;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 5;
+}
+
+
+.add__svg {
+  display: block;
+  margin: 0 11px 0 9px;
+}
+
+.add__svg path {
+  fill: transparent;
+}
+
+.add__btn__txt {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: transparent;
 }
 
 
 .wrap__img {
   margin-bottom: 24px;
+  position: relative;
 }
-
-/* .wrap__img:hover .prodact__add__btn {
-  background-image: url(../img/prodact__hover.svg);
-  width: 139px;
-  height: 44px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: absolute;
-} */
 
 .prodact__txt__wrap {
   margin: 24px 16px;
@@ -486,10 +505,52 @@ body {
   filter: drop-shadow(0px 2px 21px rgba(0, 0, 0, 0.231));
 }
 
-.prodacts__img__item:hover {
+.prodacts__item:hover .wrap__img::before {
+  content: '';
   background: rgba(58, 56, 56, 0.86);
+  position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.prodacts__item:hover .prodact__add__btn {
+  border: solid 1px #fff;
+}
+
+.prodacts__item:hover .add__btn__txt {
+  color: #fff;
+}
+
+.prodacts__item:hover .add__svg path {
+  fill: #fff;
+}
+
+.prodacts__item:hover .prodact__add__btn:hover {
+  border: none;
+  background: rgba(172, 165, 165, 0.86);
+}
+
+.prodacts__item:hover .prodact__add__btn:active {
+  border: #fff;
+  background-color: transparent;
+}
+
+.prodact__add__btn:hover .add__btn__txt {
+  color: rgba(58, 56, 56, 0.86);
+}
+
+.prodact__add__btn:active .add__btn__txt {
+  color: #fff;
+}
+
+.prodact__add__btn:hover .add__svg path {
+  fill: rgba(58, 56, 56, 0.86);
+}
+
+.prodact__add__btn:active .add__svg path {
+  fill: #fff;
 }
 
 .footer {
@@ -602,4 +663,7 @@ body {
     grid-template-columns: repeat(2, minmax(30%, 360px));
   }
 
+  .footer {
+    margin: 0 auto 70px auto;
+  }
 }
